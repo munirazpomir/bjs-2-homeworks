@@ -9,7 +9,6 @@ class PrintEditionItem {
 
 	fix() {
 		this.state = this.state * 1.5;
-		return this.state;
 	}
 
 	set state(number) {
@@ -72,7 +71,7 @@ class Library extends PrintEditionItem {
 	}
 
 	addBook(book) {
-		if (this.state > 30) {
+		if (book.state > 30) {
 			this.books.push(book);
 		}
 	}
