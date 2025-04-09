@@ -37,7 +37,7 @@ class AlarmClock {
 					ring.callback();
 				}
 			})
-		});
+		}, 1000);
 	}
 
 	stop() {
